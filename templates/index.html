@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    {% load static %}
+  </head>
+  <body>
+    <img src="{% static 'star.png' %}" alt="Star1" /> <br />
+    <img src="{% static 'star.png' %}" alt="Star2" /> <br />
+    <img src="{% static 'star.png' %}" alt="Star3" /> <br />
+    <h1>Hello World!</h1>
+    {% for i in names %}
+    <p>{{i.name}} is a great guy.</p>
+    {% endfor %}
+  </body>
+</html>
